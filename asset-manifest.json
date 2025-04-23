@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/vVictoRras/HomeWork-Sprint-2.git/static/css/main.7dcdef78.css",
-    "main.js": "/vVictoRras/HomeWork-Sprint-2.git/static/js/main.cfb2688f.js",
-    "static/js/787.4cef105c.chunk.js": "/vVictoRras/HomeWork-Sprint-2.git/static/js/787.4cef105c.chunk.js",
-    "static/media/avatar.png": "/vVictoRras/HomeWork-Sprint-2.git/static/media/avatar.d947cb9d0d13765666b6.png",
-    "index.html": "/vVictoRras/HomeWork-Sprint-2.git/index.html",
-    "main.7dcdef78.css.map": "/vVictoRras/HomeWork-Sprint-2.git/static/css/main.7dcdef78.css.map",
-    "main.cfb2688f.js.map": "/vVictoRras/HomeWork-Sprint-2.git/static/js/main.cfb2688f.js.map",
-    "787.4cef105c.chunk.js.map": "/vVictoRras/HomeWork-Sprint-2.git/static/js/787.4cef105c.chunk.js.map"
+    "main.css": "/HomeWork-Sprint-2.git/static/css/main.7dcdef78.css",
+    "main.js": "/HomeWork-Sprint-2.git/static/js/main.58d050bb.js",
+    "static/js/787.4cef105c.chunk.js": "/HomeWork-Sprint-2.git/static/js/787.4cef105c.chunk.js",
+    "static/media/avatar.png": "/HomeWork-Sprint-2.git/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/HomeWork-Sprint-2.git/index.html",
+    "main.7dcdef78.css.map": "/HomeWork-Sprint-2.git/static/css/main.7dcdef78.css.map",
+    "main.58d050bb.js.map": "/HomeWork-Sprint-2.git/static/js/main.58d050bb.js.map",
+    "787.4cef105c.chunk.js.map": "/HomeWork-Sprint-2.git/static/js/787.4cef105c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7dcdef78.css",
-    "static/js/main.cfb2688f.js"
+    "static/js/main.58d050bb.js"
   ]
 }
