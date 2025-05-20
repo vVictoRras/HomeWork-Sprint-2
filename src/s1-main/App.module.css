@@ -1,10 +1,13 @@
 .App {
     --header_height: 60px;
-    width: 1280px;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    /*padding: 0 100px;*/
+    z-index: 1;
 }
 
 .hw {
-    width: 100%;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     padding: 30px 70px;

@@ -1,8 +1,13 @@
 .burgerMenuIcon {
+margin-left: 25px;
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .header h1 {
+margin-right: 25px;
 }
