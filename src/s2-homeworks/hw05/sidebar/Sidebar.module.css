@@ -1,68 +1,78 @@
 .sidebar {
-    position: absolute;
+    z-index: 20;
+    position: fixed;
+    transition: 0.2s ease-in;
+
+    height: 100vh;
+    width: 317px;
+    left: -317px;
     top: 0;
-    left: -100%;
+
     background: #fff;
-    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
-    transition: left 0.3s ease;
-    z-index: 100;
-    display: block;
-    overflow: hidden
 }
 
 .sidebar.open {
+    position: fixed;
+    transition: 0.2s ease-out;
+
     left: 0;
-    width: 317px;
-    height: 100%;
+    box-shadow: 0 10px 40px rgba(29, 33, 38, 0.13),
+    0 1px 2px rgba(29, 33, 38, 0.1);
 }
 
 .background {
+    z-index: 10;
     position: fixed;
-    top: 0;
+
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background: #000;
-    opacity: 0.3;
-    z-index: 99;
+    top: 0;
+
+    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .nav {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 60px 20px;
+    gap: 45px;
+    margin-top: 63px;
+    padding-left: 70px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
 }
 
 .nav a {
-    font: 600 22px 'Roboto', sans-serif;
-    color: #000;
+    color: black;
     text-decoration: none;
-    transition: color 0.2s ease;
-    padding: 5px 10px;
 }
 
 .nav a:hover {
-    color: #58acff;
+    color: #0080ff;
 }
 
 .nav a.active {
     color: #0059b2;
     text-decoration: underline;
-    text-underline-offset: 5px;
 }
-
 .close {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
+    height: 24px;
+    width: 24px;
+    right: 24px;
+    top: 16px;
+
+    background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 5px;
 }
 
 .close img {
-    width: 24px;
     height: 24px;
+    width: 24px;
 }
