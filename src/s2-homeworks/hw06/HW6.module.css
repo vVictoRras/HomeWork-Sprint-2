@@ -1,5 +1,13 @@
 .buttonsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   margin: 25px 25px ;
+gap: 25px;
 }
 
 .editableSpanContainer {
-}
+   display: flex;
+    margin: 25px;
+    align-items: center;
+   }

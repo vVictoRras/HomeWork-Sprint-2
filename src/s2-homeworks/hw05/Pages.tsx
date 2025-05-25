@@ -13,16 +13,26 @@ export const PATH = {
 
 function Pages() {
     return (
-        <div>
+        <>
+            {/*Routes выбирает первый подходящий роут*/}
             <Routes>
-                <Route path="/" element={<Navigate to={PATH.PRE_JUNIOR} />} />
-                <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
-                <Route path={PATH.JUNIOR} element={<Junior/>} />
-                <Route  path={PATH.JUNIOR_PLUS}  element={<JuniorPlus/>} />
-                <Route path="/error404" element={<Error404 />} />
-                <Route path="*" element={<Navigate to="/error404"/>} />
+                {/*роутинг будут писать студенты*/}
+                {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
+                <Route path = "/" element = {<Navigate to = {PATH.PRE_JUNIOR}/>} /> {/*  "/" is placed only in the parent line.  */}
+
+                {/*роуты для /pre-junior, /junior, /junior-plus*/}
+
+                <Route path = {PATH.PRE_JUNIOR} element = {<PreJunior />} />
+
+                <Route path = {PATH.JUNIOR} element = {<Junior />} />
+
+                <Route path = {PATH.JUNIOR_PLUS} element = {<JuniorPlus />} />
+
+                {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
+
+                <Route path = "*" element = {<Error404 />} /> {/* "*" means that Error404 will appear in case of any other page will not work. */}
             </Routes>
-        </div>
+        </>
     )
 }
 
