@@ -14,11 +14,24 @@ import {Loader} from './Loader'
 * */
 
 const HW10 = () => {
+    //
+    // const themeMode = useAppSelector(selectThemeMode)
+    //
+    // const dispatch = useAppDispatch()
+    //
+    // const theme = getTheme(themeMode)
+    //
+    // const changeMode = () => {
+    //     dispatch(changeThemeModeAC({themeMode: themeMode === 'light' ? 'dark' : 'light'}))
+    // }
+
+    const dispatch=useDispatch()
     // useSelector, useDispatch // пишет студент
     const isLoading = false
+    const loading=useSelector(state => state.isLoading)
 
-    const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
-        // dispatch
+    const setLoading = (isLoading:boolean) => { // пишет студент // показать крутилку на 1,5 секунд
+        dispatch(loadingAC(isLoading))// dispatch
 
         // setTimeout
     }
