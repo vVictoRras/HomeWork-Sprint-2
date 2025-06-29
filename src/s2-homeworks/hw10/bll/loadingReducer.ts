@@ -7,7 +7,7 @@ const initState = {
 export const loadingReducer = (state = initState, action: LoadingActionType): any => { // fix any
     switch (action.type) {
         case 'CHANGE_LOADING':{
-            return state.isLoading = true
+            return { ...state, isLoading: action.isLoading }
         }// пишет студент  // need to fix
 
         default:

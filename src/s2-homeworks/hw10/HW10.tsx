@@ -24,16 +24,17 @@ const HW10 = () => {
     // const changeMode = () => {
     //     dispatch(changeThemeModeAC({themeMode: themeMode === 'light' ? 'dark' : 'light'}))
     // }
-
+    //const selectLoadingMode = (state:AppStoreType) => state.loading.isLoading
     const dispatch=useDispatch()
     // useSelector, useDispatch // пишет студент
-    const isLoading = false
-    const loading=useSelector(state => state.isLoading)
+    const isLoading = useSelector((state: AppStoreType) => state.loading.isLoading)
 
     const setLoading = (isLoading:boolean) => { // пишет студент // показать крутилку на 1,5 секунд
-        dispatch(loadingAC(isLoading))// dispatch
+        dispatch(loadingAC(true))// dispatch
 
-        // setTimeout
+        setTimeout(() => {
+            dispatch(loadingAC(false))
+        },1500)
     }
 
     return (
@@ -48,7 +49,7 @@ const HW10 = () => {
                 ) : (
                     <SuperButton
                         id={'hw10-button-start-loading'}
-                        onClick={setLoading}
+                        onClick={()=>{setLoading(true)}}
                     >
                         Set loading...
                     </SuperButton>
