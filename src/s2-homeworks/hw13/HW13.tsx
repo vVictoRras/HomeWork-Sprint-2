@@ -67,10 +67,10 @@ const HW13 = () => {
                     }
                 } else {
                     // ошибка сети или некорректный URL
-                    setCode('Ошибка!')
+                    setCode('Error!')
                     setImage(errorUnknown)
                     setText(e.message)
-                    setInfo('Network error / wrong URL')
+                    setInfo('AxiosError')
                 }
             })
             .finally(() => {
